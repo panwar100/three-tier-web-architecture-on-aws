@@ -74,6 +74,8 @@ create two route one public one private
 ### route table is  created
 ![Screenshot from 2025-05-13 18-59-57](https://github.com/user-attachments/assets/13a42376-9b66-4b3f-b7af-d133cc8f7d3a)
 
+----
+
 # - Security group 
 ### create 5 security group
 ### InernetFacing
@@ -97,6 +99,8 @@ create two route one public one private
 ### security group is created
 ![Screenshot from 2025-05-13 19-39-29](https://github.com/user-attachments/assets/921d6d39-7920-4029-98e6-f1c040c570df)
 
+---
+
 # - RDS
 ### create subnet groups in rds
 ![Screenshot from 2025-05-13 19-26-59](https://github.com/user-attachments/assets/654d95eb-8838-4612-bd19-1fa8169958fa)
@@ -106,10 +110,11 @@ create two route one public one private
 ![Screenshot from 2025-05-13 19-32-19](https://github.com/user-attachments/assets/b723b4ee-b9d6-4bc4-b4c8-b174631c2120)
 ![Screenshot from 2025-05-13 19-33-26](https://github.com/user-attachments/assets/f344f7ee-c7f6-4a4f-b8e4-eaf673cb7ca7)
 
+---
 
 # - EC2 
 # - for AppServer
-### launch instance 
+### launch instance for Appserver
 ![Screenshot from 2025-05-13 19-40-29](https://github.com/user-attachments/assets/a4ebe9df-7e70-483f-81ba-4730e9228161)
 ![Screenshot from 2025-05-13 19-44-50](https://github.com/user-attachments/assets/85ed5173-a401-4957-8eb9-2187b05216c8)
 ![Screenshot from 2025-05-13 19-45-23](https://github.com/user-attachments/assets/f82a2ce3-c82b-4370-97f1-3212593bddf2)
@@ -129,8 +134,111 @@ paste in this command like this
 
 
 ![Screenshot from 2025-05-13 21-39-02](https://github.com/user-attachments/assets/d00707b0-5931-4891-a78e-8dfa4f985f3b)
+![Screenshot from 2025-05-13 21-49-55](https://github.com/user-attachments/assets/320e1f49-30c1-4d10-9544-16da0ea86c2f)
+![Screenshot from 2025-05-13 21-50-34](https://github.com/user-attachments/assets/adbb18e2-877b-48af-bc5b-545181fdcc33)
+![Screenshot from 2025-05-13 21-50-48](https://github.com/user-attachments/assets/d7f19174-fcfa-42ec-a71b-86c02e503525)
+
+upload the app-tier folder in thwe s3 bucket 
+![Screenshot from 2025-05-13 21-43-23](https://github.com/user-attachments/assets/b8a673ab-9721-4c54-bf04-b3ca7c352287)
+
+then
+![Screenshot from 2025-05-13 21-51-35](https://github.com/user-attachments/assets/28bde097-9537-4211-bb85-3ea0771b4b02)
+![Screenshot from 2025-05-13 21-52-06](https://github.com/user-attachments/assets/a0fc9b62-a918-4f1e-98a1-97e3a0abea08)
+![Screenshot from 2025-05-13 21-52-39](https://github.com/user-attachments/assets/751729e7-dcae-4880-b09c-68bd4c595916)
+![Screenshot from 2025-05-13 21-52-59](https://github.com/user-attachments/assets/40450cb8-e820-4766-8813-d3f8025d52db)
+
+test
+![Screenshot from 2025-05-13 21-58-40](https://github.com/user-attachments/assets/4d78ad01-b028-4a34-8ea1-6cd78ba0e76e)
+
+test fail becuase our DbConfig.js value is empty so we going to edit the DbConfig.js file and do the test again 
+![Screenshot from 2025-05-13 22-04-54](https://github.com/user-attachments/assets/c2da5303-ed76-4a6c-8932-8fb76f3c4e70)
+![Screenshot from 2025-05-13 22-01-26](https://github.com/user-attachments/assets/781c6521-37ce-4494-a1d9-394c2fb23a51)
+
+### create an image from instance
+![Screenshot from 2025-05-13 22-09-51](https://github.com/user-attachments/assets/08a4a633-4e06-4d9d-9b11-994f6251c62e)
+![Screenshot from 2025-05-13 22-10-44](https://github.com/user-attachments/assets/5fc8a98f-5343-4198-8ccd-3c7eb00910d1)
+
+### create target group
+![Screenshot from 2025-05-13 22-12-15](https://github.com/user-attachments/assets/94f2eb2b-9e6f-4558-8459-20160280f098)
+![Screenshot from 2025-05-13 22-12-55](https://github.com/user-attachments/assets/0deb261f-4d54-44f5-97fd-bc5aa106f9f2)
+![Screenshot from 2025-05-13 22-13-26](https://github.com/user-attachments/assets/a11828a8-a527-4fc0-a2f6-09dd387baffd)
+![Screenshot from 2025-05-13 22-14-23](https://github.com/user-attachments/assets/fa0c7693-3881-4461-b111-8e9c88ceecab)
+
+### create loadbalancer
+![Screenshot from 2025-05-13 22-14-44](https://github.com/user-attachments/assets/351ed940-3f75-4381-b067-44bf406b821c)
+![Screenshot from 2025-05-13 22-15-50](https://github.com/user-attachments/assets/c208e6b0-3efc-422f-a49e-7e87c0c3d0bf)
+![Screenshot from 2025-05-13 22-16-59](https://github.com/user-attachments/assets/171ea54d-1572-4206-90ec-bad09a86a08e)
+![Screenshot from 2025-05-13 22-17-31](https://github.com/user-attachments/assets/ae259f8b-411b-4b79-8c55-bc718898efd2)
+
+### launch template
+![Screenshot from 2025-05-13 22-19-57](https://github.com/user-attachments/assets/55378bbc-ba06-4865-b8c0-0bc90c5f3cd2)
+![Screenshot from 2025-05-13 22-20-45](https://github.com/user-attachments/assets/e1f7c6e0-b2cf-496a-a086-297fa738bd3b)
+![Screenshot from 2025-05-13 22-21-18](https://github.com/user-attachments/assets/535cf67d-b818-4df9-9686-7e8f03f9c30c)
+![Screenshot from 2025-05-13 22-21-44](https://github.com/user-attachments/assets/bb314c59-dcb3-4e42-b1c8-77a13751c1f6)
+
+### create autoscaling
+![Screenshot from 2025-05-13 22-22-51](https://github.com/user-attachments/assets/cffb8f55-afec-44f1-9bec-2f24fe00da33)
+![Screenshot from 2025-05-13 22-23-30](https://github.com/user-attachments/assets/92b63937-ce28-4a4d-b47d-d2b1de3d96c5)
+![Screenshot from 2025-05-13 22-24-06](https://github.com/user-attachments/assets/f3effc2e-9fbb-40be-9792-41bebe576e18)
+![Screenshot from 2025-05-13 22-24-48](https://github.com/user-attachments/assets/1119aa98-2fcc-4614-9257-a12d2f21c553)
+
+now copy the dns and paste on nginx.conf file like 58 line
+
+![Screenshot from 2025-05-13 22-30-44](https://github.com/user-attachments/assets/6589fcab-c7e0-4506-9807-00c230153324)
+![Screenshot from 2025-05-13 22-31-46](https://github.com/user-attachments/assets/46c530de-cc9c-421f-bf5b-24623e577311)
+
+now upload ngnix.conf file and web-tier folder on your s3 bucket
+![Screenshot from 2025-05-13 22-33-18](https://github.com/user-attachments/assets/db7033cd-d973-433f-bf20-95c642aa19ab)
+![Screenshot from 2025-05-13 22-35-15](https://github.com/user-attachments/assets/db0d91fe-36f6-4c03-982f-5c1815c40930)
+
+---
+
+# - for WebServer
+### launch instance for Webserver
+![Screenshot from 2025-05-13 22-44-35](https://github.com/user-attachments/assets/c4c3b883-188a-4af9-b0de-e6f572784aa7)
+![Screenshot from 2025-05-13 22-44-25](https://github.com/user-attachments/assets/0b4b1274-9b00-4bb9-9327-32fad9a7bb48)
+![Screenshot from 2025-05-13 22-38-11](https://github.com/user-attachments/assets/16a6d990-c25c-4c6a-bc69-d3d823167905)
+
+select instance click on connect then  select smm and connect
+![Screenshot from 2025-05-13 22-49-35](https://github.com/user-attachments/assets/17ef5791-e81c-4ce8-a51c-2a1b0e7ff7ad)
+![Screenshot from 2025-05-13 22-51-39](https://github.com/user-attachments/assets/068849c7-7510-4c1a-b2bd-96975a7df9ba)
+![Screenshot from 2025-05-13 22-52-04](https://github.com/user-attachments/assets/616eed13-5af9-49f8-ab22-ec3885716b41)
+![Screenshot from 2025-05-13 22-53-24](https://github.com/user-attachments/assets/8f26ee25-6a8d-4375-8be1-bb57f9ec8503)
+![Screenshot from 2025-05-13 22-54-48](https://github.com/user-attachments/assets/2c612986-74e1-454e-9153-394133af053e)
+![Screenshot from 2025-05-13 22-55-47](https://github.com/user-attachments/assets/8e02ee4d-47c1-49de-b553-d7675ce66c25)
+![Screenshot from 2025-05-13 22-58-16](https://github.com/user-attachments/assets/6ffc14f2-4341-4788-9339-437c01f0d7c5)
+![Screenshot from 2025-05-13 23-02-04](https://github.com/user-attachments/assets/1c9ae1c8-8c9b-40ce-9062-9de5865b5529)
+![Screenshot from 2025-05-13 23-03-07](https://github.com/user-attachments/assets/300d56c3-3ae3-44d1-a45f-a608377e6f0c)
+
+copy the ip of your intance and paste on your web browser
+![Screenshot from 2025-05-13 23-04-17](https://github.com/user-attachments/assets/f3435958-62d3-417a-8f22-b6dd06c5a4a2)
 
 
 
+### create an image from instance
+![Screenshot from 2025-05-13 23-06-17](https://github.com/user-attachments/assets/f19d0a82-4108-410e-9a84-acd823575494)
+![Screenshot from 2025-05-13 23-07-00](https://github.com/user-attachments/assets/900fdd49-6289-42b7-8f60-3227e16f6202)
 
+### create target group
+![Screenshot from 2025-05-13 23-09-27](https://github.com/user-attachments/assets/f913d90a-89ae-4681-9b69-7aed304edf7f)
+![Screenshot from 2025-05-13 23-09-44](https://github.com/user-attachments/assets/fec3b1a3-bcb4-4e34-a265-91dc5c643a02)
+
+### create loadbalancer
+![Screenshot from 2025-05-13 23-11-06](https://github.com/user-attachments/assets/f2b3b0fd-a4a2-40b1-807c-fcc5bda0316a)
+![Screenshot from 2025-05-13 23-12-09](https://github.com/user-attachments/assets/df011f00-ced0-4587-bf8e-79c89d9164e4)
+
+### launch template
+![Screenshot from 2025-05-13 23-14-18](https://github.com/user-attachments/assets/25732be3-456a-41fa-815a-d5dd88738cb1)
+![Screenshot from 2025-05-13 23-14-41](https://github.com/user-attachments/assets/5f4a0f39-585f-49cd-b3dd-ffbf033a53ce)
+![Screenshot from 2025-05-13 23-15-16](https://github.com/user-attachments/assets/981cbfa8-00ee-40e6-b03b-5a44afd0d732)
+![Screenshot from 2025-05-13 23-15-36](https://github.com/user-attachments/assets/aeb3f782-bd48-4f4f-9b39-eee785029552)
+
+### create autoscaling
+![Screenshot from 2025-05-13 23-16-36](https://github.com/user-attachments/assets/2270a9db-03cf-4b7e-817a-b305b08d9e74)
+![Screenshot from 2025-05-13 23-17-32](https://github.com/user-attachments/assets/4480f69e-874e-4746-a54f-a11826c209bf)
+![Screenshot from 2025-05-13 23-21-17](https://github.com/user-attachments/assets/044dbe2d-83d4-43aa-9a19-3b07605ff1ca)
+![Screenshot from 2025-05-13 23-21-44](https://github.com/user-attachments/assets/cd33961e-003d-4bc2-8214-fcfb76984266)
+
+now copy the dns of loadbalancer and paste on your web browser
+![Screenshot from 2025-05-13 23-22-44](https://github.com/user-attachments/assets/ff092191-7f61-4d2e-b134-1511d2f42e8a)
 
