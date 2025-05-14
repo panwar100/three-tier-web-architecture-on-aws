@@ -80,6 +80,57 @@ create two route one public one private
 ![Screenshot from 2025-05-13 19-06-00](https://github.com/user-attachments/assets/27a4da10-41b1-47c9-8b6f-9015025f13db)
 ![Screenshot from 2025-05-13 19-06-33](https://github.com/user-attachments/assets/ed752f41-6acc-41dc-9605-84a0870a2fb4)
 
-###
+### webTier
+![Screenshot from 2025-05-13 19-11-16](https://github.com/user-attachments/assets/d9d45ad1-a769-4c72-8759-44ce1493317b)
+![Screenshot from 2025-05-13 19-12-07](https://github.com/user-attachments/assets/2c3eb491-011b-4405-a060-dd8590d575d7)
+![Screenshot from 2025-05-13 19-13-10](https://github.com/user-attachments/assets/159985fc-8ea8-4b5e-aa0b-91172aaf91ab)
+
+### Inernal-lb-sg
+![Screenshot from 2025-05-13 19-22-17](https://github.com/user-attachments/assets/7736f9ca-689f-44fd-98f9-0d6a503c96e0)
+
+### PrivateInstance
+![Screenshot from 2025-05-13 19-21-49](https://github.com/user-attachments/assets/6146e44d-32a4-4420-8e36-c3145319a041)
+
+### DB-sg
+![Screenshot from 2025-05-13 19-24-06](https://github.com/user-attachments/assets/82181904-9de7-4e10-9276-c7072af3eb15)
+
+### security group is created
+![Screenshot from 2025-05-13 19-39-29](https://github.com/user-attachments/assets/921d6d39-7920-4029-98e6-f1c040c570df)
+
+# - RDS
+### create subnet groups in rds
+![Screenshot from 2025-05-13 19-26-59](https://github.com/user-attachments/assets/654d95eb-8838-4612-bd19-1fa8169958fa)
+
+### create database
+![Screenshot from 2025-05-13 19-30-23](https://github.com/user-attachments/assets/d74147c6-9aad-49db-a674-dc8c54208edf)
+![Screenshot from 2025-05-13 19-32-19](https://github.com/user-attachments/assets/b723b4ee-b9d6-4bc4-b4c8-b174631c2120)
+![Screenshot from 2025-05-13 19-33-26](https://github.com/user-attachments/assets/f344f7ee-c7f6-4a4f-b8e4-eaf673cb7ca7)
+
+
+# - EC2 
+# - for AppServer
+### launch instance 
+![Screenshot from 2025-05-13 19-40-29](https://github.com/user-attachments/assets/a4ebe9df-7e70-483f-81ba-4730e9228161)
+![Screenshot from 2025-05-13 19-44-50](https://github.com/user-attachments/assets/85ed5173-a401-4957-8eb9-2187b05216c8)
+![Screenshot from 2025-05-13 19-45-23](https://github.com/user-attachments/assets/f82a2ce3-c82b-4370-97f1-3212593bddf2)
+![Screenshot from 2025-05-13 19-46-15](https://github.com/user-attachments/assets/73dfd8cc-a852-496b-9fdd-922de015e946)
+
+select instance click on connect then  select smm and connect
+![Screenshot from 2025-05-13 21-32-17](https://github.com/user-attachments/assets/aad2051e-92ad-4730-a561-3573eed8cff5)
+![Screenshot from 2025-05-13 21-32-35](https://github.com/user-attachments/assets/45497fde-58bf-41e2-a8a8-1fe6f4b9317a)
+![Screenshot from 2025-05-13 21-32-50](https://github.com/user-attachments/assets/b8bd0cac-dbef-48af-bd50-e8c8a4f9c119)
+![Screenshot from 2025-05-13 21-33-05](https://github.com/user-attachments/assets/e1412075-4b82-4967-abc2-ccf7da3b70c7)
+
+copy endpoint of database
+![Screenshot from 2025-05-13 21-33-37](https://github.com/user-attachments/assets/cfa0898f-a928-424b-bae7-42c47c5c3735)
+
+paste in this command like this
+![Screenshot from 2025-05-13 21-33-18](https://github.com/user-attachments/assets/112b4219-0e84-498c-b135-dedaa33d6b1f)
+
+
+![Screenshot from 2025-05-13 21-39-02](https://github.com/user-attachments/assets/d00707b0-5931-4891-a78e-8dfa4f985f3b)
+
+
+
 
 
